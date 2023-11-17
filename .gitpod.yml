@@ -1,1 +1,5 @@
-image: ghcr.io/electron/build:latest
+tasks:
+  - name: build
+    init: |
+      # Run MySQL
+      docker run ghcr.io/electron/build:latest
